@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X-Machina Portal Prototype</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo-mark">X</div>
+        <div>
+          <div class="brand-name">X-Machina</div>
+          <div class="brand-caption">AI Training + Hackathons</div>
+        </div>
+      </div>
+      <div class="role-switcher">
+        <label>View as</label>
+        <select id="roleSelect">
+          <option value="student">Student / D2C</option>
+          <option value="institution">University / Institution</option>
+        </select>
+      </div>
+      <nav id="nav"></nav>
+      <div class="side-card">
+        <h3>Build<br/>Learn<br/>Compete</h3>
+        <p>Create what’s next with AI tools, guided learning and 48-hour product building.</p>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search courses, tools, hackathons, students..." /></div>
+        <div class="top-actions">
+          <button class="ghost-btn" data-page="pricing">Pricing</button>
+          <button class="ghost-btn" data-page="help">Help</button>
+          <button class="notification">🔔<span></span></button>
+          <div class="profile-chip"><div class="avatar">A</div><div><strong id="profileName">Aarav Mehta</strong><small id="profileRole">Student</small></div></div>
+        </div>
+      </header>
+      <section id="page" class="page"></section>
+    </main>
+  </div>
+  <div id="modal" class="modal hidden"><div class="modal-backdrop" id="modalCloseBackdrop"></div><div class="modal-panel"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
